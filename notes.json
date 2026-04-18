@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Prepare weekly report",
+    "content": "Collect updates from the team and summarize key progress points.",
+    "tag": "Work"
+  },
+  {
+    "title": "Buy groceries",
+    "content": "Milk, eggs, bread, apples, and coffee.",
+    "tag": "Shopping"
+  },
+  {
+    "title": "Doctor appointment",
+    "content": "Annual health checkup on Friday at 10 AM.",
+    "tag": "Health"
+  },
+  {
+    "title": "Plan summer trip",
+    "content": "Compare hotel prices and book train tickets.",
+    "tag": "Travel"
+  },
+  {
+    "title": "New app idea",
+    "content": "Build a simple note sharing app with tags and reminders.",
+    "tag": "Ideas"
+  },
+  {
+    "title": "Pay internet bill",
+    "content": "Complete payment before the 20th of the month.",
+    "tag": "Finance"
+  },
+  {
+    "title": "Team sync meeting",
+    "content": "Discuss sprint goals and blockers with the team.",
+    "tag": "Meeting"
+  },
+  {
+    "title": "Call parents",
+    "content": "Check in on Sunday evening.",
+    "tag": "Personal"
+  },
+  {
+    "title": "Finish homework",
+    "content": "Complete MongoDB homework and verify deployment.",
+    "tag": "Important"
+  },
+  {
+    "title": "Clean workspace",
+    "content": "Organize desk and delete unused files.",
+    "tag": "Todo"
+  }
+]
