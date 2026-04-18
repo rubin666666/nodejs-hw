@@ -2,6 +2,7 @@
   "name": "nodejs-hw",
   "version": "1.0.0",
   "description": "Express app for notes collection homework",
+  "type": "module",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
@@ -28,7 +29,10 @@
     "pino-http": "^11.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.25.1",
     "eslint": "^10.2.0",
-    "nodemon": "^3.1.14"
+    "globals": "^16.0.0",
+    "nodemon": "^3.1.14",
+    "pino-pretty": "^13.0.0"
   }
 }

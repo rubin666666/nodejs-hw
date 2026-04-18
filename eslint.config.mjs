@@ -1,12 +1,17 @@
+import js from '@eslint/js';
+import globals from 'globals';
+
 export default [
+  js.configs.recommended,
   {
     files: ['**/*.js'],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'commonjs',
+      sourceType: 'module',
       globals: {
+        ...globals.node,
+        ...globals.es2024,
         console: 'readonly',
-        process: 'readonly',
       },
     },
     rules: {
@@ -14,4 +19,3 @@ export default [
     },
   },
 ];
-
