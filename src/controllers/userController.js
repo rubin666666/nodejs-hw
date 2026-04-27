@@ -11,9 +11,13 @@ export const updateUserAvatar = async (req, res) => {
   const result = await saveFileToCloudinary(req.file.buffer);
   const avatar = result.secure_url;
 
-  await User.findByIdAndUpdate(req.user._id, { avatar });
+  const user = await User.findByIdAndUpdate(
+    req.user._id,
+    { avatar },
+    { returnDocument: 'after' }
+  );
 
   res.status(200).json({
-    url: avatar,
+    url: user.avatar,
   });
 };

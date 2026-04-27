@@ -11,7 +11,13 @@ export const saveFileToCloudinary = (buffer) =>
     });
 
     const uploadStream = cloudinary.uploader.upload_stream(
-      { folder: 'avatars' },
+      {
+        folder: 'avatars',
+        resource_type: 'image',
+        overwrite: true,
+        unique_filename: true,
+        use_filename: true,
+      },
       (error, result) => {
         if (error) {
           reject(error);
