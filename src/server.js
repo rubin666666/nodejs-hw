@@ -10,6 +10,7 @@ import { logger } from './middleware/logger.js';
 import { notFoundHandler } from './middleware/notFoundHandler.js';
 import authRouter from './routes/authRoutes.js';
 import notesRouter from './routes/notesRoutes.js';
+import userRouter from './routes/userRoutes.js';
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ const startServer = async () => {
   app.use(cors({ credentials: true, origin: true }));
 
   app.use(authRouter);
+  app.use(userRouter);
   app.use(notesRouter);
 
   app.use(errors());
